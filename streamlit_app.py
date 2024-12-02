@@ -1,5 +1,4 @@
 import streamlit as st
-from st_pages import add_page_title, get_nav_from_toml
 from PIL import Image
 
 icon = Image.open('images/logo.png')
