@@ -1,1 +1,1 @@
-st_pages
+st-pages
