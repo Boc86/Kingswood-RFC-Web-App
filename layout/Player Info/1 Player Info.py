@@ -1,4 +1,7 @@
 import streamlit as st
+from funcs.read_markdown import read_markdown_file
+
+body_markdown = read_markdown_file('content/player info/welcome letter/body.md')
 
 banner = "images/player info/banner.png"
 st.image(banner)
@@ -10,7 +13,7 @@ with st.container():
     lef_col, right_col = st.columns(2)
 
     with lef_col:
-        st.markdown(open('content/player info/welcome letter/body.txt').readlines())
+        st.markdown(body_markdown, unsafe_allow_html=True)
     
     with right_col:
         st.subheader("Usefull Links")

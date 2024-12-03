@@ -1,8 +1,11 @@
 import streamlit as st
+from funcs.read_markdown import read_markdown_file
+
+body_markdown = read_markdown_file('content/coaching/coaches handbook/intro.md')
 
 st.image("images/coaching/banner.png")
 st.title("Coaches Handbook")
-st.markdown(open("content/coaching/coaches handbook/intro.txt").readlines())
+st.markdown(body_markdown, unsafe_allow_html=True)
 
 with st.container():
     st.write("---")

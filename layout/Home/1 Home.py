@@ -1,12 +1,14 @@
 import streamlit as st
-from streamlit.components.v1 import iframe
+from funcs.read_markdown import read_markdown_file
+
+body_markdown = read_markdown_file('content/home/home/body.md')
 
 banner = "images/home/banner.jpg"
 st.image(banner)
 
 with st.container():
     st.header("👋 Welcome to the Kingswood Rugby Club Volunteers Community!")
-    st.markdown(open('content/home/home/body.txt').readlines())
+    st.markdown(body_markdown, unsafe_allow_html=True)
 
 with st.container():
     left_col, right_col = st.columns(2)
