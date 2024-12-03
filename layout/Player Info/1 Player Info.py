@@ -15,7 +15,7 @@ with st.container():
     with right_col:
         st.subheader("Usefull Links")
         st.page_link("layout/Home/2 HowTo.py", label=None, icon=":material/help:", help=None, disabled=False, use_container_width=None)
-        st.page_link("layout/parent info/2 Parent Volunteering.py", label=None, icon=":material/volunteer_activism:", help=None, disabled=False, use_container_width=None)
+        st.page_link("layout/Parent Info/2 Parent Volunteering.py", label=None, icon=":material/volunteer_activism:", help=None, disabled=False, use_container_width=None)
         st.page_link("layout/Coaching/2 Coaching Team.py", label=None, icon=":material/diversity_2:", help=None, disabled=False, use_container_width=None)
         st.page_link("layout/Safeguarding/1 Safeguarding.py", label=None, icon=":material/enhanced_encryption:", help=None, disabled=False, use_container_width=None)
         st.page_link("layout/Mental Health/1 Mental Health.py", label=None, icon=":material/health_and_safety:", help=None, disabled=False, use_container_width=None)
