@@ -35,7 +35,7 @@ parent_volunteering = st.Page(
 )
 
 parent_age_groups = st.Page(
-    "layout/Parent Info/3 parent Age Groups.py", title="Age Groups", icon=":material/pin:"
+    "layout/Parent Info/3 Parent Age Groups.py", title="Age Groups", icon=":material/pin:"
 )
 
 ### Player Info ###
