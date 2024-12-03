@@ -1,5 +1,11 @@
 import streamlit as st
 from PIL import Image
+from forms.feedback import feddback_form
+
+@st.dialog("Send Feedback")
+def show_feedback_form():
+    feddback_form()
+
 
 icon = Image.open('images/logo.png')
 
@@ -105,5 +111,7 @@ pg = st.navigation(
         "Mental Health": [mental_health, mental_health_resources]
     }
 )
+
+st.sidebar.button("Send Feedback", on_click=show_feedback_form)
 
 pg.run() 
