@@ -5,4 +5,4 @@ st.image(banner)
 st.divider()
 
 with st.container():
-    st.markdown(open('content/safeguarding/safeguarding/body.txt').readlines())
+    st.markdown(open('content/safeguarding/safeguarding policy/body.txt').readlines())

@@ -5,4 +5,4 @@ banner = "images/mental health/banner.jpg"
 st.image(banner)
 
 with st.container():
-    st.markdown(open('content/mental health/mental health/body.txt').readlines())
+    st.markdown(open('content/mental health/resources/intro.txt').readlines())
