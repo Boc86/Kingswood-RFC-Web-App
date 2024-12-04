@@ -6,6 +6,7 @@ body_markdown = read_markdown_file('content/home/external links/body.md')
 
 banner = "images/home/banner.jpg"
 st.image(banner)
+st.title("External Links")
 
 with st.container():
     st.markdown(intro_markdown, unsafe_allow_html=True)
