@@ -1,0 +1,4 @@
+Welcome to our curated collection of external links to invaluable rugby resources! Whether you're a coach, player, fan, or enthusiast, this page is your gateway to a wealth of online resources dedicated to all things rugby.
+We've scoured the web to bring you a carefully curated selection of websites offering everything from coaching tips and training drills to match analysis, news updates, and fan communities. Whether you're looking to sharpen your skills, stay updated on the latest rugby developments, or simply immerse yourself in the world of rugby, you'll find something here to pique your interest.
+So, whether you're a seasoned rugby aficionado or just dipping your toes into the sport, dive into our collection of external links and explore the vast landscape of rugby knowledge and inspiration waiting for you online.
+Happy browsing, and may your rugby journey be as rewarding as it is exhilarating!
