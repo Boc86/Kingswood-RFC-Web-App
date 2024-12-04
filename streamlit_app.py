@@ -91,6 +91,10 @@ coaching_resources = st.Page(
     "layout/Coaching/6 Resources.py", title="Resources", icon=":material/share:"
 )
 
+coaching_resources = st.Page(
+    "layout/Coaching/7 Message Board.py", title="Message Board", icon=":material/forum:"
+)
+
 ### Mental Health ###
 mental_health = st.Page(
     "layout/Mental Health/1 Mental Health.py", title="Mental Health", icon=":material/health_and_safety:"
