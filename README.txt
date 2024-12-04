@@ -1,5 +1,9 @@
-Knowledge library for bringing volunteers up to speed at Kingswood Rugby Club
+This app is a knowledge library for Kingswood Rugby Club to support volunteers and coaches in their support of the club.
+It is licensed under GNU General Public License version 2 as is not to be reproduced, copied or redistrubuted without express permission of the owner.
 
-Website: https://www.kingswoodrfc.co.uk
+App URL: https://kingswood-rfc-web-app.streamlit.app/
+Club Website: https://www.kingswoodrfc.co.uk
 
-app developed by Boc
+App developed by Boc
+All source code is held at https://github.com/Boc86/Kingswood-RFC-Web-App
+The app is hosted on https://share.streamlit.io/ 
