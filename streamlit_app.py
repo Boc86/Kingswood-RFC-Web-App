@@ -31,6 +31,10 @@ how_to = st.Page(
     "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Volunteer Community Web App", icon=":material/help:"
 )
 
+external_links = st.Page(
+    "layout/Home/3 External Links,py", title="External Links", icon=":material/captive_portal:"
+)
+
 ### Parent Info ###
 parent_info = st.Page(
     "layout/Parent Info/1 Parent Info.py", title="Welcome Letter", icon=":material/info:"
@@ -106,7 +110,7 @@ mental_health_resources = st.Page(
 
 pg = st.navigation(
     {
-        "Home": [home, how_to],
+        "Home": [home, how_to, external_links],
         "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
         "Player Info": [player_info],
         "Policies": [policies],
