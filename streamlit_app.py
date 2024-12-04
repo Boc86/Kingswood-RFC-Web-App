@@ -32,7 +32,7 @@ how_to = st.Page(
 )
 
 external_links = st.Page(
-    "layout/Home/3 External Links,py", title="External Links", icon=":material/captive_portal:"
+    "layout/Home/3 External Links.py", title="External Links", icon=":material/captive_portal:"
 )
 
 ### Parent Info ###
