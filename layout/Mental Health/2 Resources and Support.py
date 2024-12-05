@@ -1,10 +1,9 @@
+# This script creates a Streamlit app for the Resources and Support section of the Mental Health pages of the Kingswood Rugby Club website.
+#
+# It reads markdown content from files in the 'content/mental health/resources' directory, and displays it in a Streamlit app.
+#
+# The app has a banner image, and an intro section.
+
+
 import streamlit as st
-from funcs.read_markdown import read_markdown_file
 
-intro_markdown = read_markdown_file('content/mental health/resources/intro.md')
-
-banner = "images/mental health/banner.jpg"
-st.image(banner)
-
-with st.container():
-    st.markdown(intro_markdown, unsafe_allow_html=True)
