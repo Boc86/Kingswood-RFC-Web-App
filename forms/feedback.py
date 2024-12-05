@@ -41,4 +41,4 @@ def feddback_form():
         if response.status_code == 200:
             st.success("Thanks for your feedback! We will get back to you soon.")
         else:
-            st.error("There was an error sending your message. Please try again later.")
+            st.error("There was an error sending your message. Please please submit feedback.")

@@ -36,4 +36,4 @@ def resource_form():
         if response.status_code == 200:
             st.success("Thanks for sharing a resource. Close this window and press R to refresh the chat board")
         else:
-            st.error("There was an error sending your message. Please try again later.")
+            st.error("There was an error sending your message. Please please submit feedback")

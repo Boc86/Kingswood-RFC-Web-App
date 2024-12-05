@@ -1,4 +1,3 @@
-import re
 import streamlit as st
 import requests
 
@@ -32,4 +31,4 @@ def message_form():
         if response.status_code == 200:
             st.success("Thanks for contributing to the discussion. Close this window and press R to refresh the chat board")
         else:
-            st.error("There was an error sending your message. Please try again later.")
+            st.error("There was an error sending your message. Please please submit feedback")
