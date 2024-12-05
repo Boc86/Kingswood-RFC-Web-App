@@ -7,7 +7,7 @@ intro_markdown = read_markdown_file('content/coaching/message board/intro.md')
 
 conn = st.connection("gsheets", type=GSC)
 
-df = conn.read(ttl=0)
+df = conn.read(worksheet=0, ttl=0)
 
 @st.dialog("Submit a message")
 def show_message_form():
@@ -20,5 +20,6 @@ with st.container(height=650, border=True):
     for row in df.itertuples():
         st.markdown(f"**Posted by**: {row.name} @ {row.date}")
         st.markdown(f"**Message**: {row.message}")
+        st.write("---")
 
 st.button("Submit a message", on_click=show_message_form)
