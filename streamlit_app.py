@@ -108,8 +108,7 @@ mental_health_resources = st.Page(
     "layout/Mental Health/2 Resources and Support.py", title="Resources and Support", icon=":material/link:"
 )
 
-pg = st.navigation(
-    {
+pg = st.navigation(    {
         "Home": [home, how_to, external_links],
         "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
         "Player Info": [player_info],
@@ -121,5 +120,6 @@ pg = st.navigation(
 )
 
 st.sidebar.button("Send Feedback", on_click=show_feedback_form)
+st.sidebar.write("Version 0.2.0")
 
 pg.run() 
