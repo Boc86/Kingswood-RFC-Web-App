@@ -1,4 +1,4 @@
-# Welcome to Kingswood Rugby Club!
+## Welcome to Kingswood Rugby Club!
 
 ## Dear Parents,
 
