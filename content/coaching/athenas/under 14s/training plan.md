@@ -1,5 +1,3 @@
----
-
 # Under 14s (Combining U13s and U14s)
 
 ## Season 1: Developing Positional Play and Tactical Awareness
@@ -45,5 +43,3 @@
 
 ### Final 6 Weeks (March-April): Transition to U16s
 - Practice longer matches to build endurance and focus on leadership roles.
-
----

@@ -1,5 +1,3 @@
----
-
 # Under 14s
 
 ## Progression from U13s
@@ -19,5 +17,3 @@ Full 15-a-side rugby is played.
 
 ## Development Focus
 Players adapt to the full field and team structure, with an emphasis on positional specialisation.
-
----

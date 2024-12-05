@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 12s program:
 
 ## Season 1: Focus on Core Skills and Confidence in Contact
@@ -157,5 +155,3 @@ These session plans are suggestions only and can be tailored as needed for the U
 - **Game**: Full match focusing on team coordination, leadership, and transitioning for U13s.
 
 This plan will build players' skills in set-pieces, rucks, mauls, and game management, with a focus on teamwork, leadership, and transitioning to larger, more tactical matches. It prepares them for the next stage of rugby development at U14s.
-
----

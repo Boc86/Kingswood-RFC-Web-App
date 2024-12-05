@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 16s program:
 
 ## Season 1: Senior-Level Preparation

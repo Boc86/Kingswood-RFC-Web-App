@@ -1,5 +1,3 @@
----
-
 # Under 15s to Under 18s
 
 ## Progression from U14s
@@ -26,5 +24,3 @@ Players play full rugby with slight variations for safety and age.
 
 ## Development Focus
 Preparing players for senior rugby with a focus on advanced strategy, fitness, and skill refinement.
-
----

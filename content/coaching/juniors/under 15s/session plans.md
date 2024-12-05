@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 15s program:
 
 ## Weeks 1–6: Advanced Set-Piece Play
@@ -155,5 +153,3 @@ These session plans are suggestions only and can be tailored as needed for the U
 - **Game**: Full match with all elements of play, preparing for U16s and senior rugby.
 
 This training plan ensures players are prepared for the demands of senior rugby with a focus on advanced techniques, game management, and leadership.
-
----

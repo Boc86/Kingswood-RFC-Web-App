@@ -1,5 +1,3 @@
----
-
 # Under 12s (Combining U11s and U12s)
 
 ## Objective of the Game
@@ -35,5 +33,3 @@ Prepare players for structured rugby with scrums, rucks, mauls, and positional p
 - Emphasise ball handling, positional awareness, and teamwork.
 - Build confidence in contact and scrummaging.
 - Introduce larger team play and field positioning in preparation for U14s.
-
----

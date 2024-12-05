@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 14s program:
 
 ## Season 1: Developing Positional Play and Tactical Awareness
@@ -156,4 +154,3 @@ These session plans are suggestions only and can be tailored as needed for the U
 - **Drill 2**: Tactical kicking for game management – using different types of kicks for field position.
 - **Game**: Full match with all elements of play, preparing for U16s.
 This plan is designed to ensure Under 14 players are ready for senior rugby by developing advanced skills in scrummaging, lineouts, rucks, mauls, tactical kicking, and defensive strategies. The focus is on creating well-rounded players who are confident in their positions and can manage the pace and tactical demands of senior rugby.
----

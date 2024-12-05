@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 13s program:
 
 ## Weeks 1–6: Foundations of Full Rugby

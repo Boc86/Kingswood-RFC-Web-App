@@ -1,5 +1,3 @@
----
-
 # Under 16s (Combining U15s and U16s)
 
 ## Season 1: Senior-Level Preparation
@@ -43,5 +41,3 @@
 
 ### Final 6 Weeks (March-April): Senior-Level Preparation
 - Full matches, refining all aspects of play and building confidence for the next level.
-
----

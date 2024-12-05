@@ -1,5 +1,3 @@
----
-
 # Under 14s Training Plan
 
 ## Objective
@@ -28,5 +26,3 @@ Full 15-a-side rugby with uncontested lineouts, contested scrums, and tactical k
 ### Weeks 19-24: Preparing for U15s
 - Introduce the role of the No. 8 in scrums.
 - Practice uncontested lineouts with safe lifting and binding.
-
----

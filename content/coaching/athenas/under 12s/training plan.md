@@ -1,5 +1,3 @@
----
-
 # Under 12s (Combining U11s and U12s)
 
 ## Season 1: Focus on Core Skills and Confidence in Contact
@@ -48,5 +46,3 @@
 ### Final 6 Weeks (March-April): Preparing for U14s
 - Increase team size to 13v13 to introduce larger fields and new laws.
 - Focus on transitions between scrums, rucks, and open play.
-
----

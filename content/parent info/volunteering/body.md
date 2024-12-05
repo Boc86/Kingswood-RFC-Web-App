@@ -1,5 +1,3 @@
----
-
 As a club driven by the passion and dedication of our community, we want to share some important information about how we operate.
 
 ### Volunteer-Driven
@@ -12,5 +10,3 @@ To keep our club running smoothly, we rely on the collective effort of all membe
 To make this manageable, we have implemented a kitchen duty rota. Each age group will be responsible for kitchen duties only twice a season. This system ensures that the workload is fairly distributed and that everyone gets a chance to contribute without it becoming overwhelming.
 
 We believe that with everyone's support, we can continue to foster a strong, vibrant community that benefits all our players. Thank you for your cooperation and enthusiasm in making Kingswood Rugby Club a wonderful place for our children to grow and enjoy the sport.
-
----

@@ -1,5 +1,3 @@
----
-
 # Under 15s Training Plan
 
 ## Objective
@@ -28,5 +26,3 @@ Prepare players for senior rugby with advanced strategy, fitness, and positional
 - Increase match duration to 30 minutes per half.
 - Introduce contested lineouts.
 - Introduce senior-level strategies like game tempo control and positional rotations.
-
----

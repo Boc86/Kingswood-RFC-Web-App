@@ -1,5 +1,3 @@
----
-
 # Under 13s Training Plan
 
 ## Objective
@@ -28,5 +26,3 @@ Transition to the near-complete version of rugby, with fully contested scrums, s
 - Introduce fully contested 8-a-side scrums with safety checks.
 - Introduce uncontested lineouts.
 - Practice open-field positional play and game management.
-
----

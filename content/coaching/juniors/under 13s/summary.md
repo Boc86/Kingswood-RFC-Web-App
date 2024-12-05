@@ -1,5 +1,3 @@
----
-
 # Under 13s
 
 ## Progression from U12s
@@ -19,5 +17,3 @@ Transition towards the full 15-a-side format begins.
 
 ## Development Focus
 Introducing a near-complete version of rugby while honing individual and team roles.
-
----

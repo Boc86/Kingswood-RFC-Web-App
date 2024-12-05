@@ -1,5 +1,3 @@
----
-
 # Under 14s (Combining U13s and U14s)
 
 ## Objective of the Game
@@ -35,5 +33,3 @@ Transition players to 15-a-side rugby, introducing uncontested lineouts and deve
 - **Positional Specialisation**: Players learn specific roles in forwards and backs.
 - **Team Structure and Strategic Gameplay**: Emphasise defensive line discipline and attacking depth.
 - **Preparation for U16 Rugby**: Focus on stamina, decision-making, and advanced tactics.
-
----

@@ -1,5 +1,3 @@
----
-
 These session plans are suggestions only and can be tailored as needed for the Under 14s program:
 
 ## Weeks 1–6: Adapting to Full Rugby
@@ -155,5 +153,3 @@ These session plans are suggestions only and can be tailored as needed for the U
 - **Game**: Full match incorporating all learned skills, preparing for U15s.
 
 This training plan focuses on transitioning players to senior rugby, with an emphasis on scrums, lineouts, rucks, mauls, and tactical kicking
-
----

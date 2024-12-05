@@ -1,5 +1,3 @@
----
-
 # Welcome to Kingswood Rugby Club!
 
 ## Hey there, New Player!
@@ -18,5 +16,3 @@ We can’t wait to see you on the field, giving your all and embracing the spiri
 ### Warm regards,
 
 **The Kingswood Rugby Club Team**
-
----

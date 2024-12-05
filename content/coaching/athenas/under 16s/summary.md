@@ -1,5 +1,3 @@
----
-
 # Under 16s (Combining U15s and U16s)
 
 ## Objective of the Game
@@ -39,5 +37,3 @@ Develop players to play full rugby with all elements of the adult game, emphasis
 - Advance game management skills, such as reading the game and adapting tactics.
 - Emphasise fitness and endurance for longer, high-intensity matches.
 - Prepare players for senior rugby with a focus on leadership, positional mastery, and team strategy.
-
----
