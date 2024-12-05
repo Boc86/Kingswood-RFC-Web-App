@@ -95,7 +95,7 @@ coaching_resources = st.Page(
     "layout/Coaching/6 Resources.py", title="Resources", icon=":material/share:"
 )
 
-coaching_resources = st.Page(
+coaching_message_board = st.Page(
     "layout/Coaching/7 Message Board.py", title="Message Board", icon=":material/forum:"
 )
 
@@ -108,18 +108,18 @@ mental_health_resources = st.Page(
     "layout/Mental Health/2 Resources and Support.py", title="Resources and Support", icon=":material/link:"
 )
 
-pg = st.navigation(
-    {
+pg = st.navigation(    {
         "Home": [home, how_to, external_links],
         "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
         "Player Info": [player_info],
         "Policies": [policies],
         "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
-        "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources],
+        "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
         "Mental Health": [mental_health, mental_health_resources]
     }
 )
 
 st.sidebar.button("Send Feedback", on_click=show_feedback_form)
+st.sidebar.write("Version 0.2.0")
 
 pg.run() 
