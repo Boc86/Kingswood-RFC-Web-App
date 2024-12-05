@@ -95,7 +95,7 @@ coaching_resources = st.Page(
     "layout/Coaching/6 Resources.py", title="Resources", icon=":material/share:"
 )
 
-coaching_resources = st.Page(
+coaching_message_board = st.Page(
     "layout/Coaching/7 Message Board.py", title="Message Board", icon=":material/forum:"
 )
 
@@ -115,7 +115,7 @@ pg = st.navigation(
         "Player Info": [player_info],
         "Policies": [policies],
         "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
-        "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources],
+        "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
         "Mental Health": [mental_health, mental_health_resources]
     }
 )
