@@ -1,4 +1,4 @@
-# Welcome to Kingswood Rugby Club!
+## Welcome to Kingswood Rugby Club!
 
 ## Hey there, New Player!
 
