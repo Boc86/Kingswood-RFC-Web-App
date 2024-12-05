@@ -1,20 +1,25 @@
+# This is the main application file that contains the layout and configuration of the application
 import streamlit as st
 from PIL import Image
 from forms.feedback import feddback_form
 
+# Application Config
+st.set_page_config(
+    page_title="KRFC Volunteers Community",
+    page_icon="",
+    layout="wide"
+)
+
 @st.dialog("Send Feedback")
-def show_feedback_form():
+def show_feedback_form() -> None:
+    # This function is used to show the feedback form within a dialog box###
     feddback_form()
 
 
 icon = Image.open('images/logo.png')
 
-st.set_page_config(
-    page_title="KRFC Volunteers Community",
-    page_icon="🏉",
-    layout="wide"
-)
 
+# Navigation Bar
 st.logo(
     image=Image.open('images/logo.png'),
     link="https://www.kingswoodrfc.co.uk",
@@ -22,7 +27,8 @@ st.logo(
     icon_image=Image.open('images/icon.png')
 )
 
-### Home ###
+# Pages
+# Home 
 home = st.Page(
     "layout/Home/1 Home.py", title="Home", icon=":material/home:", default= True
 )
@@ -35,7 +41,7 @@ external_links = st.Page(
     "layout/Home/3 External Links.py", title="External Links", icon=":material/captive_portal:"
 )
 
-### Parent Info ###
+# Parent Info
 parent_info = st.Page(
     "layout/Parent Info/1 Parent Info.py", title="Welcome Letter", icon=":material/info:"
 )
@@ -48,17 +54,17 @@ parent_age_groups = st.Page(
     "layout/Parent Info/3 Parent Age Groups.py", title="Age Groups", icon=":material/pin:"
 )
 
-### Player Info ###
+# Player Info
 player_info = st.Page(
     "layout/Player Info/1 Player Info.py", title="Player Info", icon=":material/info:"
 )
 
-### Policies ###
+# Policies
 policies = st.Page(
     "layout/Policies/1 Policies.py", title="Policies", icon=":material/topic:"
 )
 
-### Safeguarding ###
+# Safeguarding
 safeguarding = st.Page(
     "layout/Safeguarding/1 Safeguarding.py", title="Safeguarding", icon=":material/enhanced_encryption:"
 )
@@ -71,7 +77,7 @@ safeguarding_ploicy = st.Page(
     "layout/Safeguarding/3 Safeguarding Policy.py", title="Safeguarding Policy", icon=":material/description:"
 )
 
-### Coaching ###
+# Coaching
 coaches_handbook = st.Page(
     "layout/Coaching/1 Coaches Handbook.py", title="Coaches Handbook", icon=":material/hub:"
 )
@@ -99,7 +105,7 @@ coaching_message_board = st.Page(
     "layout/Coaching/7 Message Board.py", title="Message Board", icon=":material/forum:"
 )
 
-### Mental Health ###
+# Mental Health
 mental_health = st.Page(
     "layout/Mental Health/1 Mental Health.py", title="Mental Health", icon=":material/health_and_safety:"
 )
@@ -108,6 +114,7 @@ mental_health_resources = st.Page(
     "layout/Mental Health/2 Resources and Support.py", title="Resources and Support", icon=":material/link:"
 )
 
+#Navigation
 pg = st.navigation(    {
         "Home": [home, how_to, external_links],
         "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
@@ -116,10 +123,12 @@ pg = st.navigation(    {
         "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
         "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
         "Mental Health": [mental_health, mental_health_resources]
-    }
+    },
+    expanded=True
 )
 
+#Sidebar
 st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-st.sidebar.write("Version 0.2.0")
+st.sidebar.write("Version 0.2.1")
 
-pg.run() 
+pg.run()
