@@ -1,5 +1,3 @@
----
-
 # Welcome to Kingswood Rugby Club!
 
 ## Dear Parents,
@@ -18,5 +16,3 @@ We look forward to seeing your children grow as rugby players and individuals. T
 ### Warm regards,
 
 **The Kingswood Rugby Club Team**
-
----
