@@ -1,4 +1,5 @@
-As a club driven by the passion and dedication of our community, we want to share some important information about how we operate.
+### Kingswood RFC Ethos
+As a club driven by the passion and dedication of our community, we want to share some important information about how we operate:
 
 ### Volunteer-Driven
 Our club is entirely run by volunteers, from those serving in the kitchen to our dedicated coaches. Their commitment ensures that we can provide a fantastic experience for all our players and families.
