@@ -3,6 +3,7 @@ import streamlit as st
 # Display the banner image and the main title of the page
 st.image("images/coaching/banner.png")
 st.title("Coaching Team")
+st.write("Meet the Kingswood Coaching Team")
 
 ### Seniors Section
 st.subheader("Seniors")
