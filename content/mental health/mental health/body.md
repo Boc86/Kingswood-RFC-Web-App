@@ -1,4 +1,4 @@
-Welcome to the Mental Health Section of the Kingswood RFC Volunteers Community!
+## Welcome to the Mental Health Section of the Kingswood RFC Volunteers Community!
 
 In the fast-paced and physically demanding world of rugby, mental health is as crucial as physical fitness. This dedicated section serves as a haven for addressing and supporting the mental well-being of our players, coaches, and supporters.
 
