@@ -129,6 +129,6 @@ pg = st.navigation(    {
 
 #Sidebar
 st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-st.sidebar.write("Version 0.2.1")
+st.sidebar.write("Version 0.2.2")
 
 pg.run()

@@ -1,6 +1,6 @@
-## Welcome to Kingswood Rugby Club!
+### Welcome to Kingswood Rugby Club!
 
-## Dear Parents,
+### Dear Parents,
 
 We are thrilled to welcome you and your children to the Kingswood Rugby Club family! We believe rugby is more than just a sport; it's an opportunity for young players to grow, learn, and thrive in a supportive and challenging environment.
 
