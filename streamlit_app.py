@@ -41,6 +41,10 @@ external_links = st.Page(
     "layout/Home/3 External Links.py", title="External Links", icon=":material/captive_portal:"
 )
 
+club_shop = st.Page(
+    "layout/Home/2.1 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
+)
+
 # Parent Info
 parent_info = st.Page(
     "layout/Parent Info/1 Parent Info.py", title="Welcome Letter", icon=":material/info:"
@@ -116,7 +120,7 @@ mental_health_resources = st.Page(
 
 #Navigation
 pg = st.navigation(    {
-        "Home": [home, how_to, external_links],
+        "Home": [home, how_to, external_links, club_shop],
         "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
         "Player Info": [player_info],
         "Policies": [policies],
