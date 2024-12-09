@@ -2,6 +2,7 @@
 
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
+from streamlit_pdf_viewer import pdf_viewer
 
 # Read the markdown content for the intro section
 intro_markdown = read_markdown_file('content/coaching/athenas/intro.md')
@@ -25,6 +26,11 @@ with tab1:
     summary_markdown = read_markdown_file('content/coaching/athenas/under 16s/summary.md')
     training_markdown = read_markdown_file('content/coaching/athenas/under 16s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/athenas/under 16s/session plans.md')
+
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/athenas/under 16s/the kingswood way.pdf", width=500)
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -54,6 +60,11 @@ with tab2:
     training_markdown = read_markdown_file('content/coaching/athenas/under 14s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/athenas/under 14s/session plans.md')
 
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/athenas/under 14s/the kingswood way.pdf", width=500)
+
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
@@ -81,6 +92,11 @@ with tab3:
     summary_markdown = read_markdown_file('content/coaching/athenas/under 12s/summary.md')
     training_markdown = read_markdown_file('content/coaching/athenas/under 12s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/athenas/under 12s/session plans.md')
+
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/athenas/under 12s/the kingswood way.pdf", width=500)
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
