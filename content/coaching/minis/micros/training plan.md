@@ -1,5 +1,5 @@
-**Micros Training Plan (September to March)**  
-**Objective:**  
+# **Micros Training Plan (September to March)**  
+## **Objective:**  
 Introduce children aged 4–6 to rugby in a safe, fun, and engaging environment that promotes basic motor skills, ball familiarity, and teamwork without the pressure of competition.
 
 ---
