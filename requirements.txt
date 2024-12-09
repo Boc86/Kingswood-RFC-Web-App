@@ -1,1 +1,2 @@
 st-gsheets-connection
+streamlit-pdf-viewer
