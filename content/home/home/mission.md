@@ -1,0 +1,2 @@
+Our mission is to create and sustain a **safe, diverse** and **inclusive**  community.
+We provide a supportive environment for individuals of all ages, genders, and abilities to come together, learn, and thrive as they embrace the values of **Teamwork, Respect, Enjoyment, Discipline** and **Sportsmanship** through Rugby. 
