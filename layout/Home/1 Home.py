@@ -3,6 +3,7 @@ from funcs.read_markdown import read_markdown_file
 
 # Read the body markdown content from a file
 body_markdown = read_markdown_file('content/home/home/body.md')
+mission_markdown = read_markdown_file('content/home/home/mission.md')
 
 # Specify the path to the banner image
 banner = "images/home/banner.jpg"
@@ -16,6 +17,8 @@ with st.container():
     st.header("👋 Welcome to the Kingswood Rugby Club Volunteers Community!")
     # Display the body markdown content, allowing HTML if present
     st.markdown(body_markdown, unsafe_allow_html=True)
+
+    "---"
 
 # Create another container for useful links
 with st.container():
@@ -36,4 +39,5 @@ with st.container():
     
     # In the right column, leave it empty for future use
     with right_col:
-        st.empty()
+        st.subheader("👑Mission Statement👑")
+        st.markdown(mission_markdown, unsafe_allow_html=True)
