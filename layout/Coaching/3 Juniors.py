@@ -2,6 +2,7 @@
 
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
+from streamlit_pdf_viewer import pdf_viewer
 
 # Read the introductory markdown content for the Coaches Handbook
 intro_markdown = read_markdown_file('content/coaching/juniors/intro.md')
@@ -21,6 +22,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Colts", "Under 16's", "Under 15's", "Un
 # Create a container for the Colts section
 with tab1:
     # Read the markdown content for the Colts section
+
     summary_markdown = read_markdown_file('content/coaching/juniors/colts/summary.md')
     training_markdown = read_markdown_file('content/coaching/juniors/colts/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/colts/session plans.md')
@@ -52,6 +54,11 @@ with tab2:
     training_markdown = read_markdown_file('content/coaching/juniors/under 16s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/under 16s/session plans.md')
 
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/juniors/under 16s/the kingswood way.pdf", width=500)
+
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
@@ -79,6 +86,11 @@ with tab3:
     training_markdown = read_markdown_file('content/coaching/juniors/under 15s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/under 15s/session plans.md')
 
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/juniors/under 15s/the kingswood way.pdf", width=500)
+
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
@@ -105,6 +117,11 @@ with tab4:
     summary_markdown = read_markdown_file('content/coaching/juniors/under 14s/summary.md')
     training_markdown = read_markdown_file('content/coaching/juniors/under 14s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/under 14s/session plans.md')
+    
+    # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/juniors/under 14s/the kingswood way.pdf", width=500)
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -133,6 +150,11 @@ with tab5:
     training_markdown = read_markdown_file('content/coaching/juniors/under 13s/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/under 13s/session plans.md')
 
+    # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        pdf_viewer("content/coaching/juniors/under 13s/the kingswood way.pdf", width=500)
+    
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
