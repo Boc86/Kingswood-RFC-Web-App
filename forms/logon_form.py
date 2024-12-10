@@ -15,6 +15,12 @@ SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 # Initialize Supabase client
 supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 
+def validate_username(username):
+    user_name = supabase_client.table('logons').select('username').eq('username', username).execute()
+
+    if not user_name:
+        return False
+
 def hash_password(password):
     """Simple password hashing function."""
     return hashlib.sha256(password.encode()).hexdigest()
@@ -61,7 +67,7 @@ def check_login(username, password):
     
     try:
         # Fetch user from Supabase
-        response = supabase_client.table('users').select('*').eq('username', username).execute()
+        response = supabase_client.table('logons').select('*').eq('username', username).execute()
         
         if response.data and len(response.data) > 0:
             # Compare hashed passwords
@@ -76,14 +82,14 @@ def register_user(username, email, rfu_id, password):
     """Register a new user in Supabase."""
     try:
         # Check if username already exists
-        existing_user = supabase_client.table('users').select('*').eq('username', username).execute()
+        existing_user = supabase_client.table('logons').select('*').eq('username', username).execute()
         
         if existing_user.data and len(existing_user.data) > 0:
             st.error("Username already exists")
             return False
         
         # Check if email already exists
-        existing_email = supabase_client.table('users').select('*').eq('email', email).execute()
+        existing_email = supabase_client.table('logons').select('*').eq('email', email).execute()
         
         if existing_email.data and len(existing_email.data) > 0:
             st.error("Email already in use")
@@ -100,7 +106,7 @@ def register_user(username, email, rfu_id, password):
             'password': hashed_password
         }
         
-        supabase_client.table('users').insert(new_user).execute()
+        supabase_client.table('logons').insert(new_user).execute()
         return True
     
     except Exception as e:
@@ -150,6 +156,9 @@ def login_form():
                 if len(reg_username) < 3:
                     validation_errors.append("Username must be at least 3 characters long")
                 
+                if not validate_username(reg_username):
+                    validation_errors.append("Username already exists please select a different one")
+                
                 # Email validation
                 if not validate_email(reg_email):
                     validation_errors.append("Invalid email address format")
@@ -164,7 +173,7 @@ def login_form():
                 
                 if reg_password != confirm_password:
                     validation_errors.append("Passwords do not match")
-                
+
                 # Display or proceed with registration
                 if validation_errors:
                     for error in validation_errors:
