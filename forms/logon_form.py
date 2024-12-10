@@ -137,7 +137,7 @@ def login_form():
             # Registration form with added fields
             reg_username = st.text_input("Choose a Username", key="reg_username")
             reg_email = st.text_input("Email Address", key="reg_email")
-            reg_rfu_id = st.text_input("RFU ID (6 digits)", key="reg_rfu_id")
+            reg_rfu_id = st.text_input("RFU ID (6 digits), you can obtain your RFU IF from the RGU GMS Dashboard", key="reg_rfu_id")
             reg_password = st.text_input("Create a Password", type="password", key="reg_password")
             confirm_password = st.text_input("Confirm Password", type="password", key="confirm_password")
             register_button: bool = st.form_submit_button(label="Register")
