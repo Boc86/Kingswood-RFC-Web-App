@@ -110,9 +110,6 @@ def register_user(username, email, rfu_id, password):
         elif existing_email.data and len(existing_email.data) > 0:
             st.error("Email already in use")
             return False
-        elif existing_rfu_id.data and len(existing_rfu_id.data) > 0:
-            st.error("RFU ID already registered")
-            return False
 
         
         # Hash the password
