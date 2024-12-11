@@ -29,7 +29,7 @@ st.title("Coaching Resources")
 st.markdown(intro_markdown, unsafe_allow_html=True)
 
 with st.expander("Coaches Mail Shot", icon=":material/mail:"):
-    set_flip_book('images/coaching/resources/latest mail shot/')
+    set_flip_book('images/coaching/resources/latest mail shot/', "LatestMailShot")
 
 with st.expander("Resources", icon=":material/library_books:"):
     # Create a container to hold the resources
