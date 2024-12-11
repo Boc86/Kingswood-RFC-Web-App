@@ -3,6 +3,7 @@
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
 from streamlit_pdf_viewer import pdf_viewer
+from funcs.flip_book import set_flip_book
 
 # Read the introductory markdown content for the Coaches Handbook
 intro_markdown = read_markdown_file('content/coaching/juniors/intro.md')
@@ -57,7 +58,7 @@ with tab2:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/juniors/under 16s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 16s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -89,7 +90,7 @@ with tab3:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/juniors/under 15s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 15s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -121,7 +122,7 @@ with tab4:
     # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/juniors/under 14s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 14s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -153,7 +154,7 @@ with tab5:
     # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/juniors/under 13s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 13s/the kingswood way/')
     
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
