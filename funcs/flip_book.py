@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
-
+import random
 
 def set_flip_book(image_paths):
 
@@ -18,12 +18,12 @@ def set_flip_book(image_paths):
         col_prev, col_next, col_next = st.columns([1,2,1])
         
         with col_prev:
-            prev_button = st.button('Previous Page', 
+            prev_button = st.button('Previous Page', key=str(random.randint(1,256000)),
                 disabled=st.session_state.page_number == 1
             )
         
         with col_next:
-            next_button = st.button('Next Page', 
+            next_button = st.button('Next Page', key=str(random.randint(1,256000)),
                 disabled=st.session_state.page_number >= total_pages
             )
         
