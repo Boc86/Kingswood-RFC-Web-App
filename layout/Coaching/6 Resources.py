@@ -42,6 +42,6 @@ with st.expander("Resources", icon=":material/library_books:"):
             st.markdown(f"**Description**: {row.description}")
             # Add a horizontal divider to separate the resources
             st.write("---")
+        # Add a button to show the dialog box to add a resource
+        st.button("Share a resource", on_click=show_resource_form)
 
-# Add a button to show the dialog box to add a resource
-st.button("Share a resource", on_click=show_resource_form)
