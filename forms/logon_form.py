@@ -16,6 +16,7 @@ SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 
 def validate_username(username):
+    """Check for duplicate username"""
     user_name = supabase_client.table('logons').select('username').eq('username', username).execute()
 
     if not user_name:
@@ -55,11 +56,20 @@ def validate_email(email):
 def validate_rfu_id(rfu_id):
     """
     Validate RFU ID:
-    - Must be exactly 6 digits
-    - No letters or special characters allowed
     """
-    # Check if the RFU ID is exactly 6 digits
-    return bool(re.match(r'^\d{6}$', rfu_id))
+    try:
+        # Fetch user from Supabase
+        response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
+        
+        if response.data and len(response.data) == 0:
+            # Check if annual subs have been paid
+            st.error("You are not affiliated with Kingswood RFC on the RFU GMS system. This could be becasue you haven't paid your annual subscription. If you have not paid your annual subs please do so on the RFU GMS website. If you believe you have already paid your subs please contact Tom Lovell.")
+            return False
+    except Exception as e:
+        st.error(f"Login error: {e}")
+    
+    return False
+    
 
 def check_login(username, password):
     """Check user credentials against Supabase."""
@@ -134,6 +144,14 @@ def login_form():
                     # Store login state
                     st.session_state['logged_in'] = True
                     st.session_state['username'] = login_username
+
+
+                    get_rfu_id = supabase_client.table('logons').select('rfu_id').eq('username', login_username).execute()
+                    reg_rfu_id = str(get_rfu_id.data[0]['rfu_id'])  
+                    st.session_state['rfu_id'] = reg_rfu_id
+
+                    get_user_name = supabase_client.table('members').select('first_name').eq('rfu_id', reg_rfu_id).execute()
+                    st.session_state['first_name'] = str(get_user_name.data[0]['first_name'])
                     st.rerun()
                 else:
                     st.error("Invalid username or password")
@@ -165,7 +183,7 @@ def login_form():
                 
                 # RFU ID validation
                 if not validate_rfu_id(reg_rfu_id):
-                    validation_errors.append("RFU ID must be exactly 6 digits")
+                    validation_errors.append("You are not affiliated with Kingswood RFC on the RFU GMS system. This could be becasue you haven't paid your annual subscription. If you have not paid your annual subs please do so on the RFU GMS website. If you believe you have already paid your subs please contact Tom Lovell.")
                 
                 # Password validations
                 if len(reg_password) < 6:
