@@ -26,7 +26,7 @@ def main_app():
 
     icon = Image.open('images/logo.png')
 
-    st.title(f"Hi, {st.session_state['username']}!")
+    st.title(f"Hi, {st.session_state['first_name']}!")
 
     # Navigation Bar
     st.logo(
@@ -145,6 +145,8 @@ def main_app():
         # Clear login state
         st.session_state['logged_in'] = False
         st.session_state['username'] = None
+        st.session_state['rfu_id'] = None
+        st.session_state['first_name'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
     st.sidebar.write("Version 0.4.0")
@@ -156,6 +158,15 @@ def main():
     # Initialize session state
     if 'logged_in' not in st.session_state:
         st.session_state['logged_in'] = False
+    
+    if 'username' not in st.session_state:
+        st.session_state['username'] = None
+
+    if 'rfu_id' not in st.session_state:    
+        st.session_state['rfu_id'] = None
+
+    if 'first_name' not in st.session_state:    
+        st.session_state['first_name'] = None
     
     # Check if user is logged in
     if not st.session_state['logged_in']:
