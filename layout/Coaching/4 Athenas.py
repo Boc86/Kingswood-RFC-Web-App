@@ -2,6 +2,7 @@
 
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
+from funcs.flip_book import set_flip_book
 from streamlit_pdf_viewer import pdf_viewer
 
 # Read the markdown content for the intro section
@@ -30,7 +31,7 @@ with tab1:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/athenas/under 16s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 16s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -63,7 +64,7 @@ with tab2:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/athenas/under 14s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 14s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -96,7 +97,7 @@ with tab3:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        pdf_viewer("content/coaching/athenas/under 12s/the kingswood way.pdf", width=500)
+        set_flip_book('images/coaching/juniors/under 12s/the kingswood way/')
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
