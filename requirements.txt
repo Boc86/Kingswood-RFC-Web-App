@@ -2,3 +2,4 @@ st-gsheets-connection
 streamlit-pdf-viewer
 supabase
 python-dotenv
+pyautogui
