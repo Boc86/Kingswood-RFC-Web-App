@@ -17,10 +17,16 @@ supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 
 def validate_username(username):
     """Check for duplicate username"""
-    user_name = supabase_client.table('logons').select('username').eq('username', username).execute()
+    response = supabase_client.table('logons').select('username').eq('username', username).execute()
+    try:
+        if not str(response.count) == "None":
+            # Check if annual subs have been paid
+            st.error("User name already in use, please choose a different one")
+            return False
+    except Exception as e:
+        st.error(f"Login error: {e}")
 
-    if not user_name:
-        return False
+    return True
 
 def hash_password(password):
     """Simple password hashing function."""
@@ -57,18 +63,19 @@ def validate_rfu_id(rfu_id):
     """
     Validate RFU ID:
     """
+    
     try:
         # Fetch user from Supabase
         response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
         
-        if response.data and len(response.data) == 0:
+        if response.data and len(response.data) < 1:
             # Check if annual subs have been paid
             st.error("You are not affiliated with Kingswood RFC on the RFU GMS system. This could be becasue you haven't paid your annual subscription. If you have not paid your annual subs please do so on the RFU GMS website. If you believe you have already paid your subs please contact Tom Lovell.")
             return False
     except Exception as e:
         st.error(f"Login error: {e}")
     
-    return False
+    return True
     
 
 def check_login(username, password):
@@ -91,19 +98,22 @@ def check_login(username, password):
 def register_user(username, email, rfu_id, password):
     """Register a new user in Supabase."""
     try:
-        # Check if username already exists
-        existing_user = supabase_client.table('logons').select('*').eq('username', username).execute()
         
-        if existing_user.data and len(existing_user.data) > 0:
-            st.error("Username already exists")
-            return False
-        
-        # Check if email already exists
+        # Check if info already exists
+        existing_rfu_id = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
         existing_email = supabase_client.table('logons').select('*').eq('email', email).execute()
+        existing_user_name = supabase_client.table('logons').select('*').eq('username', username).execute()
         
-        if existing_email.data and len(existing_email.data) > 0:
+        if existing_user_name.data and len(existing_user_name.data) > 0:
+            st.error("Username already registered")
+            return False
+        elif existing_email.data and len(existing_email.data) > 0:
             st.error("Email already in use")
             return False
+        elif existing_rfu_id.data and len(existing_rfu_id.data) > 0:
+            st.error("RFU ID already registered")
+            return False
+
         
         # Hash the password
         hashed_password = hash_password(password)
@@ -161,7 +171,7 @@ def login_form():
             # Registration form with added fields
             reg_username = st.text_input("Choose a Username", key="reg_username")
             reg_email = st.text_input("Email Address", key="reg_email")
-            reg_rfu_id = st.text_input("RFU ID (6 digits), you can obtain your RFU IF from the RGU GMS Dashboard", key="reg_rfu_id")
+            reg_rfu_id = st.text_input("RFU ID, you can obtain your RFU IF from the RGU GMS Dashboard", key="reg_rfu_id")
             reg_password = st.text_input("Create a Password", type="password", key="reg_password")
             confirm_password = st.text_input("Confirm Password", type="password", key="confirm_password")
             register_button: bool = st.form_submit_button(label="Register")
