@@ -19,7 +19,7 @@ def set_flip_book(image_paths, unique_key):
         
         with col_prev:
             prev_button = st.button('Previous Page', 
-                disabled=st.session_state[f'page_number_{unique_key}'] == 1,
+                disabled=st.session_state[f'page_number_{unique_key}'] < 1,
                 key=f'prev_page_btn_{unique_key}'
             )
         
