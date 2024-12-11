@@ -58,7 +58,7 @@ with tab2:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        set_flip_book('images/coaching/juniors/under 16s/the kingswood way/')
+        set_flip_book('images/coaching/juniors/under 16s/the kingswood way/', "under16s")
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -90,7 +90,7 @@ with tab3:
      # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        set_flip_book('images/coaching/juniors/under 15s/the kingswood way/')
+        set_flip_book('images/coaching/juniors/under 15s/the kingswood way/', "under15s")
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -122,7 +122,7 @@ with tab4:
     # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        set_flip_book('images/coaching/juniors/under 14s/the kingswood way/')
+        set_flip_book('images/coaching/juniors/under 14s/the kingswood way/', "under14s")
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
@@ -154,7 +154,7 @@ with tab5:
     # Create an expander for the kingswood way
     with st.expander("The Kingswood Way", icon=":material/forest:"):
         # Display the content
-        set_flip_book('images/coaching/juniors/under 13s/the kingswood way/')
+        set_flip_book('images/coaching/juniors/under 13s/the kingswood way/', "under13s")
     
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
