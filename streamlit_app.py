@@ -147,7 +147,7 @@ def main_app():
         st.session_state['username'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-    st.sidebar.write("Version 0.3.0")
+    st.sidebar.write("Version 0.4.0")
 
     pg.run()
 
