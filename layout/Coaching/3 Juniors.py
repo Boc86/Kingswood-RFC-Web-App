@@ -4,10 +4,6 @@ import streamlit as st
 from funcs.read_markdown import read_markdown_file
 from streamlit_pdf_viewer import pdf_viewer
 from funcs.flip_book import set_flip_book
-import pyautogui
-
-screen_width, screen_height = pyautogui.size()
-max_screen_width = int(screen_width * 0.75)
 
 # Read the introductory markdown content for the Coaches Handbook
 intro_markdown = read_markdown_file('content/coaching/juniors/intro.md')
@@ -35,7 +31,7 @@ with tab1:
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
-        st.image("content/coaching/juniors/colts/info.png", width=max_screen_width)
+        st.image("content/coaching/juniors/colts/info.png")
 
     # Create an expander for the Summary
     with st.expander("Summary", icon=":material/format_text_clip:"):
@@ -67,7 +63,7 @@ with tab2:
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
-        st.image("content/coaching/juniors/under 16s/info.png", width=max_screen_width)
+        st.image("content/coaching/juniors/under 16s/info.png")
 
     # Create an expander for the Summary
     with st.expander("Summary", icon=":material/format_text_clip:"):
@@ -99,7 +95,7 @@ with tab3:
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
-        st.image("content/coaching/juniors/under 15s/info.png", width=max_screen_width)
+        st.image("content/coaching/juniors/under 15s/info.png")
 
     # Create an expander for the Summary
     with st.expander("Summary", icon=":material/format_text_clip:"):
@@ -131,7 +127,7 @@ with tab4:
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
-        st.image("content/coaching/juniors/under 14s/info.png", width=max_screen_width)
+        st.image("content/coaching/juniors/under 14s/info.png")
 
     # Create an expander for the Summary
     with st.expander("Summary", icon=":material/format_text_clip:"):
@@ -163,7 +159,7 @@ with tab5:
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
         # Display the infographic image
-        st.image("content/coaching/juniors/under 13s/info.png", width=max_screen_width)
+        st.image("content/coaching/juniors/under 13s/info.png")
 
     # Create an expander for the Summary
     with st.expander("Summary", icon=":material/format_text_clip:"):
