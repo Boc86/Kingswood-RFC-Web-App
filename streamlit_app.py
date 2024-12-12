@@ -6,7 +6,7 @@ from forms.logon_form import login_form
 
 # Application Config
 st.set_page_config(
-    page_title="KRFC Volunteers Community",
+    page_title="KRFC Knowledge App",
     page_icon="",
     layout="wide"
 )
@@ -43,7 +43,7 @@ def main_app():
     )
 
     how_to = st.Page(
-        "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Volunteer Community Web App", icon=":material/help:"
+        "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Knowledege App", icon=":material/help:"
     )
 
     external_links = st.Page(
@@ -149,7 +149,7 @@ def main_app():
         st.session_state['first_name'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-    st.sidebar.write("Version 0.4.2")
+    st.sidebar.write("Version 0.4.5")
 
     pg.run()
 

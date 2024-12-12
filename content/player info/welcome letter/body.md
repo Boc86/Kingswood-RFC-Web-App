@@ -1,6 +1,6 @@
 ### Hey there, New Player!
 
-We’re thrilled to welcome you to Kingswood Rugby Club, where rugby is not just a sport—it is a way of life! Whether you are new to the game or already a seasoned player, we are excited to have you join our vibrant and dynamic team.
+We are thrilled to welcome you to Kingswood Rugby Club, where rugby is not just a sport, it is a way of life! Whether you are new to the game or already a seasoned player, we are excited to have you join our vibrant and dynamic team.
 
 ### At Kingswood Rugby Club, you willl find:
 

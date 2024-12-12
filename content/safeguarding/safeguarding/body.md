@@ -1,4 +1,4 @@
-# Welcome to the Safeguarding Section of the Kingswood RFC Volunteers Community!
+## Welcome to the Safeguarding Section of the Kingswood RFC Knowledge App!
 
 At our rugby club, the safety and well-being of our members, particularly our young players, are paramount. This dedicated section is designed to provide a comprehensive resource centre for safeguarding matters within our community.
 
