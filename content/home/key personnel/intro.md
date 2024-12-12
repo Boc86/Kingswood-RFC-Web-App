@@ -1,0 +1,2 @@
+## **Welcome to the Kingswood Rugby Club's Key Personnel page!** 
+Here, you will find information about the dedicated individuals who work tirelessly behind the scenes to ensure the smooth running of our club. From our experienced coaches to our committed administrative staff, each member plays a crucial role in fostering a supportive and thriving rugby community. Get to know the faces and stories of those who make Kingswood Rugby Club a special place for players, supporters, and families alike.
