@@ -10,4 +10,4 @@ Thank you for being a part of our community. We look forward to embarking on thi
 
 Warm regards,
 
-The Kingswood Rugby Club Team 🏉
+The Kingswood Rugby Club Team
