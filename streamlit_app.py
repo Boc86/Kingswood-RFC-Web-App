@@ -46,12 +46,16 @@ def main_app():
         "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Knowledege App", icon=":material/help:"
     )
 
+    key_pers = st.Page(
+        "layout/Home/2.1 Key Personnel.py", title="Key Personnel", icon=":material/account_circle:"
+    )
+
     external_links = st.Page(
         "layout/Home/3 External Links.py", title="External Links", icon=":material/captive_portal:"
     )
 
     club_shop = st.Page(
-        "layout/Home/2.1 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
+        "layout/Home/2.2 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
     )
 
     # Parent Info
@@ -129,7 +133,7 @@ def main_app():
 
     #Navigation
     pg = st.navigation(    {
-            "Home": [home, how_to, external_links, club_shop],
+            "Home": [home, how_to, key_pers, external_links, club_shop],
             "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
             "Player Info": [player_info],
             "Policies": [policies],
