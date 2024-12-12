@@ -6,7 +6,7 @@ from forms.logon_form import login_form
 
 # Application Config
 st.set_page_config(
-    page_title="KRFC Volunteers Community",
+    page_title="KRFC Knowledge App",
     page_icon="",
     layout="wide"
 )
@@ -43,7 +43,11 @@ def main_app():
     )
 
     how_to = st.Page(
-        "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Volunteer Community Web App", icon=":material/help:"
+        "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Knowledege App", icon=":material/help:"
+    )
+
+    key_pers = st.Page(
+        "layout/Home/2.1 Key Personnel.py", title="Key Personnel", icon=":material/account_circle:"
     )
 
     external_links = st.Page(
@@ -51,7 +55,7 @@ def main_app():
     )
 
     club_shop = st.Page(
-        "layout/Home/2.1 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
+        "layout/Home/2.2 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
     )
 
     # Parent Info
@@ -129,7 +133,7 @@ def main_app():
 
     #Navigation
     pg = st.navigation(    {
-            "Home": [home, how_to, external_links, club_shop],
+            "Home": [home, how_to, key_pers, external_links, club_shop],
             "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
             "Player Info": [player_info],
             "Policies": [policies],
@@ -149,7 +153,7 @@ def main_app():
         st.session_state['first_name'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-    st.sidebar.write("Version 0.4.2")
+    st.sidebar.write("Version 0.4.5")
 
     pg.run()
 
