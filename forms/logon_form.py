@@ -100,7 +100,6 @@ def register_user(username, email, rfu_id, password):
     try:
         
         # Check if info already exists
-        existing_rfu_id = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
         existing_email = supabase_client.table('logons').select('*').eq('email', email).execute()
         existing_user_name = supabase_client.table('logons').select('*').eq('username', username).execute()
         
@@ -135,7 +134,7 @@ def login_form():
     with st.form(key="Feedback"):
 
         """Streamlit login page."""
-        st.title("KRFC Volunteer Hub Login / Register")
+        st.title("👑 KRFC Knowledge Login / Register")
         
         # Create tabs
         tab1, tab2 = st.tabs(["Login", "Register"])
