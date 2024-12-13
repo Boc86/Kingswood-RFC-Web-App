@@ -7,7 +7,21 @@
 
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
+import supabase
+import os
+from dotenv import load_dotenv
 
+# Load environment variables
+load_dotenv()
+# Supabase Configuration
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
+
+# Initialize Supabase client
+supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
+
+#conenct to database and run queries
+safe = supabase_client.table('members').select('*').eq('type', "safeguarding").order('last_name', desc=False).execute()
 
 # Read the markdown content for the intro section
 into_markdown = read_markdown_file('content/safeguarding/safeguarding officers/intro.md')
@@ -26,13 +40,11 @@ with st.container():
     # Display the markdown content for the intro section
     st.markdown(into_markdown, unsafe_allow_html=True)
 
-    # Create two columns, one for each Safeguarding Officer
-    left_col, right_col = st.columns(2)
+# Add each person fron the safeguarding category in the database
+i = 0
+for rows in safe.data:
+    st.subheader(str(safe.data[i]['first_name']) + " " + str(safe.data[i]['last_name']))
+    st.write(str(safe.data[i]['title']))
+    st.write("---")
+    i += 1   
 
-    # Create a subheader for the first Safeguarding Officer
-    with left_col:
-        st.subheader("Kirsty Lovell")   
-
-    # Create a subheader for the second Safeguarding Officer
-    with right_col:
-        st.subheader("Gemma Ryan")
