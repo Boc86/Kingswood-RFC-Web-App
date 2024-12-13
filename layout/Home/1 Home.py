@@ -14,7 +14,7 @@ st.image(banner, use_container_width=True)
 # Create a container for the welcome message
 with st.container():
     # Display a header with a welcome message
-    st.header("👋 Welcome to the Kingswood Rugby Club Volunteers Community!")
+    st.header("👋 Welcome to the Kingswood Rugby Club Knowledge App 📖")
     # Display the body markdown content, allowing HTML if present
     st.markdown(body_markdown, unsafe_allow_html=True)
 
