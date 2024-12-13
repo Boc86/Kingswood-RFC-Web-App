@@ -19,7 +19,14 @@ SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 
 #conenct to database and run queries
-resources = supabase_client.table('resources').select('*').execute()
+resources = (
+    supabase_client
+    .table('resources')
+    .select('*')
+    .order('created_at', desc=True)
+    .execute()
+
+)
 
 # Read the markdown content for the intro from the file
 intro_markdown = read_markdown_file('content/coaching/resources/intro.md')
@@ -46,14 +53,11 @@ with st.expander("Resources", icon=":material/library_books:"):
         # Loop through each row in the dataframe
         for row in resources.data:
             # Display the title, link, and description of the resource
-            st.markdown(f"**Title**: ")
-            st.write(str(resources.data[i]['title']))
-            st.markdown(f"**Link**: ")
-            st.write(str(resources.data[i]['link']))
-            st.markdown(f"**Description**: ")
-            st.write(str(resources.data[i]['description']))
-            st.markdown(f"**Tarhet Audience**: ")
-            st.write(str(resources.data[i]['target_audience']))
+            st.markdown(f"**Title**: " + resources.data[i]['title'])
+            st.markdown(f"**Link**: " + resources.data[i]['link'])
+            st.markdown(f"**Description**: " + resources.data[i]['description'])
+            st.markdown(f"**Tarhet Audience**: " + resources.data[i]['target_audience'])
+            st.markdown(f"**Added by**: " + resources.data[i]['created_by'] + " on " + resources.data[i]['created_at'])
             # Add a horizontal divider to separate the resources
             st.write("---")
             i += 1
