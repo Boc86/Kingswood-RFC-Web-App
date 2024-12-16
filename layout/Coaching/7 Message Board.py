@@ -30,15 +30,6 @@ messages = (
 # Read the introductory markdown content for the Coaches Handbook
 intro_markdown = read_markdown_file('content/coaching/message board/intro.md')
 
-
-# Connect to the Google sheet which contains the message board data
-conn = st.connection("gsheets", type=GSC)
-
-
-# Read the data from the Google sheet
-df = conn.read(worksheet=0, ttl=0)
-
-
 # Define a function which will be called when the user clicks the "Submit a message" button
 @st.dialog("Submit a message")
 def show_message_form():
