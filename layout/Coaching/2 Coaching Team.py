@@ -24,6 +24,23 @@ with st.expander("Womens", icon=":material/info:"):
     with right_col:
         st.write("Ellie Rich")
 
+with st.expander("Walking Rugby", icon=":material/directions_walk:"):
+    left_col, right_col = st.columns(2)
+    with left_col:
+        st.write("Steve Deery")
+    with right_col:
+        st.empty()
+
+#AIR Section
+st.subheader("All Inclusive Rugby")
+
+with st.expander("AIR", icon=":material/all_inclusive:"):
+    left_col, right_col = st.columns(2)
+    with left_col:
+        st.write("Austin Coombs")
+    with right_col:
+        st.empty()
+
 ### Juniors Section
 st.subheader("Juniors")
 
@@ -135,6 +152,7 @@ with st.expander("Under 10's", icon=":material/info:"):
     with left_col:
         st.write("Chris Broome")
         st.write("Amy Wheeler")
+        st.write("Nick Hackett")
     with right_col:
         st.write("James Pearson")
         st.write("Stafford McLaughlin")
