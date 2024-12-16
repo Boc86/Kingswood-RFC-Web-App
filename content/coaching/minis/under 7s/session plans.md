@@ -1,4 +1,4 @@
-# **Under 7s Rugby Training Program**
+# **Under 7s Session Plan**
 
 ### **Overview**
 These session plans are suggestions and can be tailored as needed for the Under 7s program.

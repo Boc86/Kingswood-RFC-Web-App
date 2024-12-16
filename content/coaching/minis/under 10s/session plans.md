@@ -1,4 +1,4 @@
-# **Under 10s Training Plan**
+# **Under 10s Session Plan**
 
 These session plans are suggestions only and can be tailored as needed for the Under 10s program.
 

@@ -1,4 +1,4 @@
-# **Under 8s Training Plan**
+# **Under 8s Session Plan**
 
 ## **Objective**
 Introduce advanced tagging, positional awareness, and teamwork while progressively preparing players for U9 rugby.

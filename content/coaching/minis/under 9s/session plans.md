@@ -1,4 +1,4 @@
-# **Under 9s Training Plan**
+# **Under 9s Session Plan**
 
 These session plans are suggestions only and can be tailored as needed for the Under 9s program.
 
