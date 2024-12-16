@@ -1,4 +1,4 @@
-# **Under 12s Training Plan**
+# **Under 12s Session Plan**
 
 ### **These session plans are suggestions only and can be tailored as needed for the Under 12s program.**
 
