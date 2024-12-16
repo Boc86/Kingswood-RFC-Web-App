@@ -74,12 +74,12 @@ def validate_rfu_id(rfu_id):
     try:
         # Fetch user from Supabase
         response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
-
+        
+        rfu_regex = r'^[0-9]+$'
         if not rfu_id:
             st.error("RFU ID cannot be blank")
             return False
-
-        rfu_regex = r'^[0-9]+$'
+        
         if not re.match(rfu_regex, rfu_id):
             st.error("RFU ID must be numeric only")
             return False
@@ -88,11 +88,12 @@ def validate_rfu_id(rfu_id):
             # Check if annual subs have been paid
             st.error("You are not affiliated with Kingswood RFC on the RFU GMS system. This could be becasue you haven't paid your annual subscription. If you have not paid your annual subs please do so on the RFU GMS website. If you believe you have already paid your subs please contact Tom Lovell.")
             return False
+        
     except Exception as e:
         st.error(f"Login error: {e}")
+        return False
     
     return True
-    
 
 def check_login(username, password):
     """Check user credentials against Supabase."""
@@ -108,8 +109,7 @@ def check_login(username, password):
             return stored_user['password'] == hashed_password
     except Exception as e:
         st.error(f"Login error: {e}")
-    
-    return False
+        return False
 
 def register_user(username, email, rfu_id, password):
     """Register a new user in Supabase."""
