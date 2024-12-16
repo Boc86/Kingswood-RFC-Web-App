@@ -18,7 +18,14 @@ supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 def validate_username(username):
     """Check for duplicate username"""
     response = supabase_client.table('logons').select('username').eq('username', username).execute()
+
+    res = " " in username
+
     try:
+        if res:
+            st.error("Username cannot contain spaces")
+            return False
+
         if not str(response.count) == "None":
             # Check if annual subs have been paid
             st.error("User name already in use, please choose a different one")
@@ -67,6 +74,15 @@ def validate_rfu_id(rfu_id):
     try:
         # Fetch user from Supabase
         response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
+
+        if not rfu_id:
+            st.error("RFU ID cannot be blank")
+            return False
+
+        rfu_regex = r'^[0-9]+$'
+        if not re.match(rfu_regex, rfu_id):
+            st.error("RFU ID must be numeric only")
+            return False
         
         if response.data and len(response.data) < 1:
             # Check if annual subs have been paid
