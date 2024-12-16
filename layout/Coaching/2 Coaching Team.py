@@ -70,7 +70,7 @@ with st.expander("Under 13's", icon=":material/info:"):
     with left_col:
         st.write("Joe Foster")
         st.write("Phil Matisian")
-        st.write("Owain Beecham")
+        st.write("Owain Beacham")
     with right_col:
         st.write("Matt Stone")
         st.write("Dan Stone")
@@ -86,13 +86,13 @@ with st.expander("Under 16s", icon=":material/info:"):
         st.write("Gary Sims")
     with right_col:
         st.write("Steve O'Callahan")
-        st.write("Rachael Garding")
+        st.write("Rachael Harding")
 
 # Under 14's coaches
 with st.expander("Under 14's", icon=":material/info:"):
     left_col, right_col = st.columns(2)
     with left_col:
-        st.write("Liam O'Laughlon")
+        st.write("Liam O'Loughlin")
         st.write("Don Smith")
     with right_col:
         st.write("Chris Deane")
