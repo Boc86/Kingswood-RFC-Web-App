@@ -67,6 +67,11 @@ def validate_rfu_id(rfu_id):
     try:
         # Fetch user from Supabase
         response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
+
+        rfu_regex = r'^[0-9]+$'
+        if not re.match(rfu_regex, rfu_id):
+            st.error("RFU ID must be numeric only")
+            return False
         
         if response.data and len(response.data) < 1:
             # Check if annual subs have been paid
