@@ -56,7 +56,7 @@ with st.expander("Resources", icon=":material/library_books:"):
             st.markdown(f"**Title**: " + resources.data[i]['title'])
             st.markdown(f"**Link**: " + resources.data[i]['link'])
             st.markdown(f"**Description**: " + resources.data[i]['description'])
-            st.markdown(f"**Tarhet Audience**: " + resources.data[i]['target_audience'])
+            st.markdown(f"**Target Audience**: " + resources.data[i]['target_audience'])
             st.markdown(f"**Added by**: " + resources.data[i]['created_by'] + " on " + resources.data[i]['created_at'])
             # Add a horizontal divider to separate the resources
             st.write("---")
