@@ -151,13 +151,14 @@ def login_form():
 
         """Streamlit login page."""
         st.title("👑 KRFC Knowledge Login / Register")
+        st.text("Please note that user names are case sensitive.")
         
         # Create tabs
         tab1, tab2 = st.tabs(["Login", "Register"])
         
         with tab1:
             st.header("Login")
-            login_username = st.text_input("Username", key="login_username").lower()
+            login_username = st.text_input("Username", key="login_username")
             login_password = st.text_input("Password", type="password", key="login_password")
             login_button: bool = st.form_submit_button(label="Login")
             
@@ -181,7 +182,7 @@ def login_form():
         with tab2:
             st.header("Register")
             # Registration form with added fields
-            reg_username = st.text_input("Choose a Username", key="reg_username").lower()
+            reg_username = st.text_input("Choose a Username", key="reg_username")
             reg_email = st.text_input("Email Address", key="reg_email")
             reg_rfu_id = st.text_input("RFU ID, you can obtain your RFU IF from the RGU GMS Dashboard", key="reg_rfu_id")
             reg_password = st.text_input("Create a Password", type="password", key="reg_password")
