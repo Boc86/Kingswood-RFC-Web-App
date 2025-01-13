@@ -74,7 +74,7 @@ def validate_rfu_id(rfu_id):
     try:
         # Fetch user from Supabase
         response = supabase_client.table('members').select('*').eq('rfu_id', rfu_id).execute()
-        
+        print(response)
         rfu_regex = r'^[0-9]+$'
         if not rfu_id:
             st.error("RFU ID cannot be blank")
@@ -84,9 +84,8 @@ def validate_rfu_id(rfu_id):
             st.error("RFU ID must be numeric only")
             return False
         
-        if response.data and len(response.data) < 1:
-            # Check if annual subs have been paid
-            st.error("You are not affiliated with Kingswood RFC on the RFU GMS system. This could be becasue you haven't paid your annual subscription. If you have not paid your annual subs please do so on the RFU GMS website. If you believe you have already paid your subs please contact Tom Lovell.")
+        if not response.data:
+            st.error("RFU ID does not exist")
             return False
         
     except Exception as e:
