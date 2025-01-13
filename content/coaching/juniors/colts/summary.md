@@ -28,7 +28,7 @@ This guide outlines the progression from Under 16s to Colts rugby, detailing key
 - **7 minutes**.
 
 ### **General Gameplay**
-- Full sesnior laws with the following variations;
+- Full senior laws with the following variations;
 - 35 mins per half. 
 - Scrums can only drive 1.5mts. 
 - Opposing Scrum Half must stay at channel level (can't follow round and contest).
