@@ -2,7 +2,6 @@
 
 import streamlit as st
 from funcs.read_markdown import read_markdown_file
-from streamlit_pdf_viewer import pdf_viewer
 from funcs.flip_book import set_flip_book
 
 # Read the introductory markdown content for the Coaches Handbook
@@ -27,6 +26,11 @@ with tab1:
     summary_markdown = read_markdown_file('content/coaching/juniors/colts/summary.md')
     training_markdown = read_markdown_file('content/coaching/juniors/colts/training plan.md')
     sessions_markdown = read_markdown_file('content/coaching/juniors/colts/session plans.md')
+
+     # Create an expander for the kingswood way
+    with st.expander("The Kingswood Way", icon=":material/forest:"):
+        # Display the content
+        set_flip_book('images/coaching/juniors/colts/the kingswood way/', "colts")
 
     # Create an expander for the Infographic
     with st.expander("Infographic", icon=":material/info:"):
