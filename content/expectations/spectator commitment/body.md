@@ -6,3 +6,5 @@ In return for the **Club's Promise** we expect the following commitments from al
 - **Representation:** Positively represent the club in the wider community, both at home and away matches.
 - **Responsibility:** Take care of club facilities, property, and resources, ensuring that they are left clean and in the condition they were found, both at home and when visiting other clubs.
 - **Support:** Contribute to fostering a welcoming and supportive environment for all.
+
+In addition to this we also ask that you familiarise yourself with the [RFU Code of Conduct](https://www.englandrugby.com/play/parents-guardians/code-conduct)
