@@ -58,6 +58,24 @@ def main_app():
         "layout/Home/2.2 Club Shop.py", title="Club Shop", icon=":material/shopping_cart:"
     )
 
+    # Club Expectations
+    club_promise = st.Page(
+        "layout/Expectations/1.0 Club Promise.py", title="Club Promise", icon=":material/diversity_4:"
+    )
+    
+    member_commitment = st.Page(
+        "layout/Expectations/2.0 Member Commitment.py", title="Member Commitment", icon=":material/card_membership:"
+    )
+
+    player_commitment = st.Page(
+        "layout/Expectations/3.0 Player Commitment.py", title="Player Commitment", icon=":material/play_arrow:"
+    )
+
+    spectator_commitment = st.Page(
+        "layout/Expectations/4.0 Spectator Commitment.py", title="Spectator Commitment", icon=":material/eyeglasses:"
+    )
+
+
     # Parent Info
     parent_info = st.Page(
         "layout/Parent Info/1 Parent Info.py", title="Welcome Letter", icon=":material/info:"
@@ -73,7 +91,7 @@ def main_app():
 
     # Player Info
     player_info = st.Page(
-        "layout/Player Info/1 Player Info.py", title="Player Info", icon=":material/info:"
+        "layout/Player Info/1 Player Info.py", title="Welcome Letter", icon=":material/info:"
     )
 
     # Policies
@@ -136,6 +154,7 @@ def main_app():
             "Home": [home, how_to, key_pers, external_links, club_shop],
             "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
             "Player Info": [player_info],
+            "Expectations": [club_promise, member_commitment, player_commitment, spectator_commitment],
             "Policies": [policies],
             "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
             "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
