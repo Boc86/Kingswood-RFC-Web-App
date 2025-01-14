@@ -144,6 +144,18 @@ def register_user(username, email, rfu_id, password):
         st.error(f"Registration error: {e}")
         return False
 
+def update_password(fgt_rfu_id, fgt_password):
+    
+    fgt_hashed_password = hash_password(fgt_password)
+
+    try:
+        supabase_client.table('logons').update({'password': fgt_hashed_password}).eq('rfu_id', fgt_rfu_id).execute()
+        return True
+
+    except Exception as e:
+        st.error(f"Registration error: {e}")
+        return False
+
 def login_form():
 
     with st.form(key="Feedback"):
@@ -153,7 +165,7 @@ def login_form():
         st.text("Please note that user names are case sensitive.")
         
         # Create tabs
-        tab1, tab2 = st.tabs(["Login", "Register"])
+        tab1, tab2, tab3 = st.tabs(["Login", "Register", "Forgot Password"])
         
         with tab1:
             st.header("Login")
@@ -222,3 +234,55 @@ def login_form():
                     # Attempt registration
                     if register_user(reg_username, reg_email, reg_rfu_id, reg_password):
                         st.success("Registration successful! You can now log in.")
+        
+        with tab3:
+            st.header("Forgot Password")
+            # Forgot password fields
+            fgt_username = st.text_input("The user name you registered with", key="fgt_username")
+            fgt_email = st.text_input("The email address you registered with", key="fgt_email")
+            fgt_rfu_id = st.text_input(" The RFU ID you resgitered with, you can obtain your RFU IF from the RGU GMS Dashboard", key="fgt_rfu_id")
+            new_password =""
+            new_confirm_password = ""
+
+            fgt_button: bool = st.form_submit_button(label="Check Details")
+
+            if fgt_button:
+                # Comprehensive validation
+                validation_errors = []
+
+                if not validate_username(fgt_username):
+                    validation_errors.append("Username not recognised")
+                
+                # Email validation
+                if not validate_email(fgt_email):
+                    validation_errors.append("Invalid email address format")
+                
+                # RFU ID validation
+                if not validate_rfu_id(fgt_rfu_id):
+                    validation_errors.append("RFU ID not recognised.")
+                
+                #Display or proceed with password reset
+                if validation_errors:
+                    for error in validation_errors:
+                        st.error(error)
+                else:
+                    # Attempt registration
+                    if len(validation_errors) == 0:
+                        st.success("Please set a new password.")
+                        st.text_input("New Password", type="password", key="fgt_new_password")
+                        st.text_input("Confirm Password", type="password", key="new_confirm_password")                    
+            
+            change_button: bool = st.form_submit_button(label= "Change Password")
+
+            if change_button:
+                new_password = st.session_state['fgt_new_password']
+                new_confirm_password = st.session_state['new_confirm_password']
+                if new_password != new_confirm_password:
+                    st.error("Passwords do not match")
+                    return
+                else:
+                    if update_password(fgt_rfu_id, new_password):
+                        st.success("Password reset successful! You can now log in.")
+                    else:
+                        st.error("Password reset failed. Please try again.")
+                                
