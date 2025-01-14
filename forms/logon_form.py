@@ -245,6 +245,7 @@ def login_form():
             new_confirm_password = ""
 
             fgt_button: bool = st.form_submit_button(label="Check Details")
+            st.text("Please confirm your details before clicking Change Password. Once your details are veified two new password fields will become visible")
 
             if fgt_button:
                 # Comprehensive validation
