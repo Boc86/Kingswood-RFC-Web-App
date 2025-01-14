@@ -11,4 +11,4 @@ In return for the **Club's Promise** we expect the following commitments from al
 - **Responsibility:** Take care of club facilities, property, and resources, ensuring that they are left clean and in the condition they were found, both at home and when playing away.
 - **Support:** Provide guidance and support to players, helping them develop their skills and reach their full potential.
 
-We also ask that all our coaches familiarise themselves with both the [RFU Code of Conduct][https://www.englandrugby.com/play/parents-guardians/code-conduct] and the [UK Coaching Code of Practice][https://www.ukcoaching.org/resources/topics/guides/code-of-practice-for-sports-coaches]
+We also ask that all our coaches familiarise themselves with both the [RFU Code of Conduct](https://www.englandrugby.com/play/parents-guardians/code-conduct) and the [UK Coaching Code of Practice](https://www.ukcoaching.org/resources/topics/guides/code-of-practice-for-sports-coaches)
