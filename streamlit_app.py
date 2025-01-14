@@ -176,7 +176,7 @@ def main_app():
         st.session_state['first_name'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-    st.sidebar.write("Version 0.6.0 Beta")
+    st.sidebar.write("Version 0.6.1 Beta")
     st.sidebar.write("Please note, the app is currently in testing and may have bugs. If you find any issues please either contact Boc directly or use the submit feedback button above. Please do not share the app outside of the coaching community until is ready for a full release.")
 
     pg.run()
