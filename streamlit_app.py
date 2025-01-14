@@ -63,6 +63,10 @@ def main_app():
         "layout/Expectations/1.0 Club Promise.py", title="Club Promise", icon=":material/diversity_4:"
     )
     
+    coach_commitment = st.Page(
+        "layout/Expectations/1.1 Coach Commitment.py", title="Coach Commitment", icon=":material/sports:"
+    )
+
     member_commitment = st.Page(
         "layout/Expectations/2.0 Member Commitment.py", title="Member Commitment", icon=":material/card_membership:"
     )
@@ -114,7 +118,7 @@ def main_app():
 
     # Coaching
     coaches_handbook = st.Page(
-        "layout/Coaching/1 Coaches Handbook.py", title="Coaches Handbook", icon=":material/hub:"
+        "layout/Coaching/1 Coaches Handbook.py", title="Coaches Handbook", icon=":material/sports:"
     )
     coaching_team = st.Page(
         "layout/Coaching/2 Coaching Team.py", title="Coaching Team", icon=":material/diversity_2:"
@@ -154,7 +158,7 @@ def main_app():
             "Home": [home, how_to, key_pers, external_links, club_shop],
             "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
             "Player Info": [player_info],
-            "Expectations": [club_promise, member_commitment, player_commitment, spectator_commitment],
+            "Expectations": [club_promise, coach_commitment, member_commitment, player_commitment, spectator_commitment],
             "Policies": [policies],
             "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
             "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
