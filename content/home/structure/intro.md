@@ -12,4 +12,5 @@ At **Kingswood Rugby Club**, we pride ourselves on fostering a strong sense of c
 
 Join us at Kingswood Rugby Club, where every member plays a vital role in our success. Whether you're a player, supporter, or volunteer, there's a place for you in our rugby family!
 
+**Note:** To better view the club structure on a mobile device, use the full screen button in the top right of the image.
 ---
