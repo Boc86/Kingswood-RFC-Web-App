@@ -60,7 +60,7 @@
         <mxCell id="LuRqBmNVZjdzien86iA9-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="LuRqBmNVZjdzien86iA9-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Tom Lovell" position="Minis &amp; Juniors Director of Rugby" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-26">
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Tom Lovell" position="Minis &amp; Juniors Chairman" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-26">
           <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
             <mxGeometry x="960" y="140" width="180" height="70" as="geometry" />
           </mxCell>
