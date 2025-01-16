@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Kingswood Rugby Club" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
-          <mxGeometry y="80" width="1530" height="440" as="geometry" />
+          <mxGeometry y="80" width="1710" height="440" as="geometry" />
         </mxCell>
         <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Ian Starr" position="Chairman" placeholders="1" id="dNxyNK7c78bLwvsdeMH5-12">
           <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
@@ -100,19 +100,9 @@
             <mxPoint x="100" y="180" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Liam O&#39;Laughlin" position="Athenas Director of Rugby" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-39">
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Liam O&#39;Laughlin" position="Athenas Co-Director of Rugby" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-39">
           <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
             <mxGeometry x="1340" y="250" width="180" height="70" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="LuRqBmNVZjdzien86iA9-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="LuRqBmNVZjdzien86iA9-39" target="LuRqBmNVZjdzien86iA9-41" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1050" y="290" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Rachal Harding" position="Athenas Assistant Director of Rugby" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-41">
-          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female4-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
-            <mxGeometry x="1340" y="360" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="LuRqBmNVZjdzien86iA9-42" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" source="LuRqBmNVZjdzien86iA9-30" target="LuRqBmNVZjdzien86iA9-43" edge="1">
@@ -135,12 +125,22 @@
             <mxGeometry x="570" y="360" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="NqxbmxRh1IsA5QDS3nw8-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="dNxyNK7c78bLwvsdeMH5-12" target="NqxbmxRh1IsA5QDS3nw8-2" parent="dNxyNK7c78bLwvsdeMH5-11">
+        <mxCell id="NqxbmxRh1IsA5QDS3nw8-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="NqxbmxRh1IsA5QDS3nw8-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Lucy Webb" position="Clubhouse Manager" placeholders="1" id="NqxbmxRh1IsA5QDS3nw8-2">
-          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female4-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
-            <mxGeometry x="390" y="30" width="180" height="70" as="geometry" />
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female4-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="380" y="30" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="6KNZqjcpT_B1EZeha_JI-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="6KNZqjcpT_B1EZeha_JI-2" source="LuRqBmNVZjdzien86iA9-26" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Rachal Harding" position="Athenas Co-Director of Rugby" placeholders="1" id="6KNZqjcpT_B1EZeha_JI-2">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+            <mxGeometry x="1530" y="250" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
       </root>
