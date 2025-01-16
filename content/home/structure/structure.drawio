@@ -139,7 +139,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Lucy Webb" position="Clubhouse Manager" placeholders="1" id="NqxbmxRh1IsA5QDS3nw8-2">
-          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female4-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
             <mxGeometry x="390" y="30" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
