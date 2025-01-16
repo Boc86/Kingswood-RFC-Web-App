@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.6">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -133,6 +133,14 @@
         <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Nick Coe" position="Head Coach" email="chair@kingswoodrfc.co.uk" placeholders="1" id="LuRqBmNVZjdzien86iA9-45">
           <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
             <mxGeometry x="570" y="360" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="NqxbmxRh1IsA5QDS3nw8-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="dNxyNK7c78bLwvsdeMH5-12" target="NqxbmxRh1IsA5QDS3nw8-2" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;" name="Lucy Webb" position="Clubhouse Manager" placeholders="1" id="NqxbmxRh1IsA5QDS3nw8-2">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+            <mxGeometry x="390" y="30" width="180" height="70" as="geometry" />
           </mxCell>
         </UserObject>
       </root>
