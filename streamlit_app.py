@@ -46,6 +46,10 @@ def main_app():
         "layout/Home/2 HowTo.py", title="How to use the Kingswood RFC Knowledege App", icon=":material/help:"
     )
 
+    structure = st.Page(
+        "layout/Home/2.01 Structure.py", title="Club Structure", icon=":material/account_tree:"
+    )
+
     key_pers = st.Page(
         "layout/Home/2.1 Key Personnel.py", title="Key Personnel", icon=":material/account_circle:"
     )
@@ -155,7 +159,7 @@ def main_app():
 
     #Navigation
     pg = st.navigation(    {
-            "Home": [home, how_to, key_pers, external_links, club_shop],
+            "Home": [home, how_to, structure, key_pers, external_links, club_shop],
             "Parent Info": [parent_info, parent_volunteering, parent_age_groups],
             "Player Info": [player_info],
             "Expectations": [club_promise, coach_commitment, member_commitment, player_commitment, spectator_commitment],
@@ -176,7 +180,7 @@ def main_app():
         st.session_state['first_name'] = None
         st.rerun()
     st.sidebar.button("Send Feedback", on_click=show_feedback_form)
-    st.sidebar.write("Version 0.6.1 Beta")
+    st.sidebar.write("Version 0.6.2 Beta")
     st.sidebar.write("Please note, the app is currently in testing and may have bugs. If you find any issues please either contact Boc directly or use the submit feedback button above. Please do not share the app outside of the coaching community until is ready for a full release.")
 
     pg.run()
