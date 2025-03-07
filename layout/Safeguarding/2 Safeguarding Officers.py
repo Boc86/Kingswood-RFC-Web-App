@@ -40,11 +40,5 @@ with st.container():
     # Display the markdown content for the intro section
     st.markdown(into_markdown, unsafe_allow_html=True)
 
-# Add each person fron the safeguarding category in the database
-i = 0
-for rows in safe.data:
-    st.subheader(str(safe.data[i]['first_name']) + " " + str(safe.data[i]['last_name']))
-    st.write(str(safe.data[i]['title']))
-    st.write("---")
-    i += 1   
+st.image("images/safeguarding/Poster.png")
 
