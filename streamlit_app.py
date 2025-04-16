@@ -120,6 +120,10 @@ def main_app():
         "layout/Safeguarding/3 Safeguarding Policy.py", title="Safeguarding Policy", icon=":material/description:"
     )
 
+    best_practice = st.Page(
+        "layout/Safeguarding/4 Best Practice.py", title="Best Practice", icon=":material/thumb_up:"
+    )
+
     # Coaching
     coaches_handbook = st.Page(
         "layout/Coaching/1 Coaches Handbook.py", title="Coaches Handbook", icon=":material/sports:"
@@ -164,7 +168,7 @@ def main_app():
             "Player Info": [player_info],
             "Expectations": [club_promise, coach_commitment, member_commitment, player_commitment, spectator_commitment],
             "Policies": [policies],
-            "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy],
+            "Safeguarding": [safeguarding, safeguarding_officers, safeguarding_ploicy, best_practice],
             "Coaching": [coaches_handbook, coaching_team, coaching_juniors, coaching_athenas, coaching_minis, coaching_resources, coaching_message_board],
             "Mental Health": [mental_health, mental_health_resources]
         },
